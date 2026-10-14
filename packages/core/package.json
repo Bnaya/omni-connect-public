@@ -1,0 +1,16 @@
+{
+  "name": "@omni/core",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Generic connector API (DRAFT). See docs/decisions/0001-core-connector-model-and-exposure.md",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  }
+}

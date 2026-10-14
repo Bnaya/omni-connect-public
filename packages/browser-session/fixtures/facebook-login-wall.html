@@ -1,0 +1,34 @@
+<!-- Reconstructed from a logged-out www.facebook.com page that redirected to the login wall:
+     the Comet shell renders LoginCometRoot and only Login* preloaders. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Log in to Facebook</title>
+  </head>
+  <body>
+    <div id="mount_0_0">
+      <div data-testid="royal_login_form" class="LoginCometRoot">
+        <form
+          id="login_form"
+          action="/login/device-based/regular/login/?login_attempt=1"
+          method="post"
+        >
+          <input type="text" name="email" id="email" /><input
+            type="password"
+            name="pass"
+            id="pass"
+          />
+          <button name="login" id="loginbutton" type="submit">Log In</button>
+        </form>
+      </div>
+    </div>
+    <script type="application/json">
+      {
+        "require": [["LSD", [], { "token": "REDACTED" }]],
+        "expectedPreloaders": [
+          { "queryName": "LoginCometSSRQuery", "queryID": "0000000000000000", "variables": {} }
+        ]
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "@omni/concurrency",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Bounded concurrency, cancellation, rate limiting and retries for connectors (a modern, AbortSignal-first take on p-map).",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}

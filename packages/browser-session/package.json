@@ -1,0 +1,18 @@
+{
+  "name": "@omni/browser-session",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A long-lived logged-in browser profile that connectors borrow: named playwright-cli sessions with persistent profiles, interchangeable transports (node fetch / in-page fetch / node fetch with the profile's cookies), Radware-and-friends challenge detection that ends in a typed needs_human handoff, per-host politeness, a response cache and a request log.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test \"src/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@omni/concurrency": "workspace:*",
+    "@omni/core": "workspace:*"
+  }
+}

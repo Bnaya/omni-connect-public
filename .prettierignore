@@ -1,0 +1,10 @@
+# oxfmt and oxlint read .prettierignore (there is no .gitignore yet).
+# Captured fixtures are byte-for-byte evidence: formatting them changes what they prove.
+# (oxfmt expanded facebook-marketplace's captured page.html on 2026-10-14 and broke its parser tests.)
+**/fixtures/**
+.local/
+node_modules/
+
+# playwright-cli run-code harnesses: the file must be a bare function EXPRESSION;
+# a trailing semicolon makes the CLI's eval fail with "Unexpected token ';'".
+connectors/**/capture/*.js
